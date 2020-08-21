@@ -62,6 +62,11 @@ I therefore wondered how to build a portable cloud to show in a simple and fun w
 a network and electricity. Fan of 2001 the Space Odyssey, I told myself that I was going to use some references
 to this film, to share my knowledge with as many people as possible.
 
+So the goal of this project is to make 4 HAL 9000 control screens. These screens in the movie show information
+that changes regularly. The objective of the final project being to fit a cloud, the HAL camera and its control screens
+into something transportable, for this project I had to look for screens that were not too large, ditto for the hardware
+necessary to make them live.
+
 ### My goals
 
 * Create the HAL console control screens
