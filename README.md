@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/AntoineMeheut/Hal9000Pictures">
+  <a href="https://github.com/AntoineMeheut/Hal9000Screen">
     <img src="images/logo.png" alt="Logo" width="80" height="240">
   </a>
 
@@ -21,11 +21,11 @@
     The goal of this project is to share the hardware, software and the implementation plan, to obtain the control screens of HAL 9000.
     <br />
     <br />
-    <a href="https://github.com/AntoineMeheut/Hal9000Pictures">View Demo</a>
+    <a href="https://github.com/AntoineMeheut/Hal9000Screen">View Demo</a>
     ·
-    <a href="https://github.com/AntoineMeheut/Hal9000Pictures/issues">Report Bug</a>
+    <a href="https://github.com/AntoineMeheut/Hal9000Screen/issues">Report Bug</a>
     ·
-    <a href="https://github.com/AntoineMeheut/Hal9000Pictures/issues">Request Feature</a>
+    <a href="https://github.com/AntoineMeheut/Hal9000Screen/issues">Request Feature</a>
   </p>
 </p>
 
@@ -111,8 +111,8 @@ to your favorite stores.
 
 ### Clone this repo
 
-	git clone https://github.com/AntoineMeheut/Hal9000Pictures.git Hal9000Pictures
-	cd Hal9000Pictures
+	git clone https://github.com/AntoineMeheut/Hal9000Screen.git Hal9000Screen
+	cd Hal9000Screen
 
 ### Setup SD Cards
 
@@ -123,7 +123,55 @@ for this project is a Raspberry Pi OS (32-bit) with desktop
 
 https://www.raspberrypi.org/documentation/installation/installing-images/
 
-### XXX
+### Installation of QIV
+QIV (Quick Image Viewer) is software for viewing images. It was developed with gdk / imlib, which makes it faster
+than many other classic viewers.
+
+```
+sudo apt-get install qiv
+```
+
+### Creating an automatic start-up script
+When starting the desktop, LXDE automatically launches the scripts found in
+the /home/pi/.config/autostart folder
+
+We will therefore create this folder on our Raspberry Pi Zero and then create the script that will be launched at startup
+from the office.
+
+```
+mkdir /home/pi/.config/autostart
+cd autostart
+sudo nano slideshow.desktop
+```
+
+Once nano is open, insert the following lines into the file.
+
+```
+[Desktop Entry]
+Type=Application
+Exec=lxterminal -e /home/pi/slideshow.sh
+```
+
+### Creation of the QIV launch script
+The script to start the application is created in the /home/pi folder
+
+```
+cd /home/pi
+sudo nano slideshow.sh
+```
+
+Once nano is open, insert the following lines into the file.
+
+```
+#!/bin/bash
+#slideshow script
+sleep 1
+export DISPLAY=:0.0
+qiv -f -R -S -n -s -r -d 5 -l -u -t -i -m  /home/pi/pics/*
+```
+
+### And here's the result
+![Result](images/photo.jpg)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -134,19 +182,20 @@ To get a local copy up and running follow these simple steps.
  
 Clone the repo
 ```
-git clone https://github.com/AntoineMeheut/Hal9000Pictures
+git clone https://github.com/AntoineMeheut/Hal9000Screen
 ```
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-XXX
+Once you have followed the steps to prepare your Raspberry Pi Zero, simply turn on the Raspberry
+and everything will start by itself.
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [Project](https://github.com/AntoineMeheut/Hal9000Pictures/projects) for a list of proposed features (and known issues).
+See the [Project](https://github.com/AntoineMeheut/Hal9000Screen/projects) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -169,21 +218,21 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Antoine Méheut - [@Linkedin_antoine-meheut](https://www.linkedin.com/in/antoine-meheut)
 
-Project Link: [https://github.com/AntoineMeheut/Hal9000Pictures](https://github.com/AntoineMeheut/Hal9000Pictures)
+Project Link: [https://github.com/AntoineMeheut/Hal9000Screen](https://github.com/AntoineMeheut/Hal9000Screen)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/AntoineMeheut/Hal9000Pictures?color=green
-[contributors-url]: https://github.com/AntoineMeheut/Hal9000Pictures/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/AntoineMeheut/Hal9000Pictures
-[forks-url]: https://github.com/AntoineMeheut/Hal9000Pictures/network/members
-[stars-shield]: https://img.shields.io/github/stars/AntoineMeheut/Hal9000Pictures
-[stars-url]: https://github.com/AntoineMeheut/Hal9000Pictures/stargazers
-[issues-shield]: https://img.shields.io/github/issues/AntoineMeheut/Hal9000Pictures
-[issues-url]: https://github.com/AntoineMeheut/Hal9000Pictures/issues
-[license-shield]: https://img.shields.io/github/license/AntoineMeheut/Hal9000Pictures
-[license-url]: https://github.com/AntoineMeheut/Hal9000Pictures/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/AntoineMeheut/Hal9000Screen?color=green
+[contributors-url]: https://github.com/AntoineMeheut/Hal9000Screen/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/AntoineMeheut/Hal9000Screen
+[forks-url]: https://github.com/AntoineMeheut/Hal9000Screen/network/members
+[stars-shield]: https://img.shields.io/github/stars/AntoineMeheut/Hal9000Screen
+[stars-url]: https://github.com/AntoineMeheut/Hal9000Screen/stargazers
+[issues-shield]: https://img.shields.io/github/issues/AntoineMeheut/Hal9000Screen
+[issues-url]: https://github.com/AntoineMeheut/Hal9000Screen/issues
+[license-shield]: https://img.shields.io/github/license/AntoineMeheut/Hal9000Screen
+[license-url]: https://github.com/AntoineMeheut/Hal9000Screen/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/antoine-meheut
 [product-screenshot]: images/screenshot.png
