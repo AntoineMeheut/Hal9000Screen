@@ -131,3 +131,7 @@ dmypy.json
 # PyCharm directory
 .idea/
 .idea/*.xml
+
+# Mac Os X Files
+.DS_Store
+

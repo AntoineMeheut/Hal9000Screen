@@ -170,6 +170,12 @@ export DISPLAY=:0.0
 qiv -f -R -S -n -s -r -d 5 -l -u -t -i -m  /home/pi/pics/*
 ```
 
+### Créer une photothèque des écrans de contrôle de Hal
+
+Placez des images des écrans de contrôle de Hal dans le répertoire /home/pi/pics/hal9000.
+
+Vous trouverez quelques exemples dans ce répertoire [Exemples](https://github.com/AntoineMeheut/Hal9000Screen/resources)
+
 ### And here's the result
 ![Result](images/photo.jpg)
 
