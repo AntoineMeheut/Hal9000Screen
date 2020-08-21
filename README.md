@@ -111,8 +111,8 @@ to your favorite stores.
 
 ### Clone this repo
 
-	git clone https://github.com/AntoineMeheut/Rokc.git Rokc
-	cd Rokc
+	git clone https://github.com/AntoineMeheut/Hal9000Pictures.git Hal9000Pictures
+	cd Hal9000Pictures
 
 ### Setup SD Cards
 
