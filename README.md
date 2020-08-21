@@ -12,7 +12,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/AntoineMeheut/Hal9000Pictures">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="240">
   </a>
 
   <h3 align="center">Creation of HAL control screens </h3>
