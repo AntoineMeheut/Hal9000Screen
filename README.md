@@ -41,11 +41,16 @@
   * [Experience sharing](#Experience-sharing)
 * [Hardware](#Hardware)
   * [Shopping list](#Shopping-list)
-  * [](#)
 * [Software](#Software)
   * [Clone this repo](#Clone-this-repo)
   * [Setup SD Cards](#Setup-SD-Cards)
-  * [Install flash](#Install-flash)
+* [Installation of images](#Installation-of-images)
+  * [Installation of QIV](#Installation-of-QIV)
+  * [Creating an automatic start-up script](#Creating-an-automatic-startup-script)
+  * [Creation of the QIV launch script](#Creation-of-the-QIV-launch-script)
+  * [Create a photo library of Hal monitors](#Create-a-photo-library-of-Hal-monitors)
+* [Installation of Hyperpixel](#Installation-of-Hyperpixel)
+* [And here is the result](#And-here-is-the-result)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
@@ -114,7 +119,7 @@ to your favorite stores.
 
 ## Software
 
-### Clone this repo
+### Clone this repo if you want
 
 	git clone https://github.com/AntoineMeheut/Hal9000Screen.git Hal9000Screen
 	cd Hal9000Screen
@@ -128,6 +133,14 @@ for this project is a Raspberry Pi OS (32-bit) with desktop
 
 https://www.raspberrypi.org/documentation/installation/installing-images/
 
+### Before plugging in your HyperPixel display
+I advise you to connect your raspberry to another screen, keyboard and smile before connecting the HyperPixel screen,
+this will allow you to connect your Pi to your Wifi, to make the necessary updates to the OS and to carry out
+the installations described below on a more comfortable screen. And most importantly, it will allow you to install
+the software part that accompanies the Hyperpixel screen, because without this software your raspberry
+will not be able to communicate correctly with this screen.
+
+## Installation of images
 ### Installation of QIV
 QIV (Quick Image Viewer) is software for viewing images. It was developed with gdk / imlib, which makes it faster
 than many other classic viewers.
@@ -136,17 +149,19 @@ than many other classic viewers.
 sudo apt-get install qiv
 ```
 
-### Creating an automatic start-up script
-When starting the desktop, LXDE automatically launches the scripts found in
-the /home/pi/.config/autostart folder
+### Creating an automatic startup script
+When starting the desktop, LXDE automatically launches the scripts found in the /home/pi/.config/autostart folder
 
 We will therefore create this folder on our Raspberry Pi Zero and then create the script that will be launched at startup
 from the office.
 
+You can also copy the files found here to your raspberry [resources](https://github.com/AntoineMeheut/Hal9000Screen/resources)
+
 ```
 mkdir /home/pi/.config/autostart
-cd autostart
+cd /home/pi/.config/autostart
 sudo nano slideshow.desktop
+sudo chmod +x slideshow.desktop
 ```
 
 Once nano is open, insert the following lines into the file.
@@ -160,9 +175,12 @@ Exec=lxterminal -e /home/pi/slideshow.sh
 ### Creation of the QIV launch script
 The script to start the application is created in the /home/pi folder
 
+You can also copy the files found here to your raspberry [resources](https://github.com/AntoineMeheut/Hal9000Screen/resources)
+
 ```
 cd /home/pi
 sudo nano slideshow.sh
+sudo chmod +x slideshow.sh
 ```
 
 Once nano is open, insert the following lines into the file.
@@ -175,13 +193,18 @@ export DISPLAY=:0.0
 qiv -f -R -S -n -s -r -d 5 -l -u -t -i -m  /home/pi/pics/*
 ```
 
-### Créer une photothèque des écrans de contrôle de Hal
+### Create a photo library of Hal monitors
 
-Placez des images des écrans de contrôle de Hal dans le répertoire /home/pi/pics/hal9000.
+Place images of Hal's control screens in the / home / pi / pics directory
 
-Vous trouverez quelques exemples dans ce répertoire [Exemples](https://github.com/AntoineMeheut/Hal9000Screen/resources)
+You will find some examples in this directory [Exemples](https://github.com/AntoineMeheut/Hal9000Screen/resources)
 
-### And here's the result
+## Installation of Hyperpixel
+All the useful explanations can be found on this link.
+
+https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-hyperpixel-4
+
+## And here is the result
 ![Result](images/photo.jpg)
 
 <!-- GETTING STARTED -->
@@ -195,7 +218,6 @@ Clone the repo
 ```
 git clone https://github.com/AntoineMeheut/Hal9000Screen
 ```
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
