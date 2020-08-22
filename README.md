@@ -265,7 +265,7 @@ Project Link: [https://github.com/AntoineMeheut/Hal9000Screen](https://github.co
 [issues-shield]: https://img.shields.io/github/issues/AntoineMeheut/Hal9000Screen
 [issues-url]: https://github.com/AntoineMeheut/Hal9000Screen/issues
 [license-shield]: https://img.shields.io/github/license/AntoineMeheut/Hal9000Screen
-[license-url]: https://github.com/AntoineMeheut/Hal9000Screen/blob/master/LICENSE
+[license-url]: https://github.com/AntoineMeheut/Hal9000Screen/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/antoine-meheut
 [product-screenshot]: images/screenshot.png
