@@ -264,8 +264,8 @@ Project Link: [https://github.com/AntoineMeheut/Hal9000Screen](https://github.co
 [stars-url]: https://github.com/AntoineMeheut/Hal9000Screen/stargazers
 [issues-shield]: https://img.shields.io/github/issues/AntoineMeheut/Hal9000Screen
 [issues-url]: https://github.com/AntoineMeheut/Hal9000Screen/issues
-[license-shield]: https://img.shields.io/github/license/AntoineMeheut/Hal9000Screen
-[license-url]: https://github.com/AntoineMeheut/Hal9000Screen/blob/master/LICENSE
+[license-shield]: https://img.shields.io/github/license/AntoineMeheut/Rokc
+[license-url]: https://github.com/AntoineMeheut/Rokc/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/antoine-meheut
 [product-screenshot]: images/screenshot.png
