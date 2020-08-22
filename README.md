@@ -155,7 +155,7 @@ When starting the desktop, LXDE automatically launches the scripts found in the 
 We will therefore create this folder on our Raspberry Pi Zero and then create the script that will be launched at startup
 from the office.
 
-You can also copy the files found here to your raspberry [resources](https://github.com/AntoineMeheut/Hal9000Screen/resources)
+You can also copy the files found here to your raspberry [resources](https://github.com/AntoineMeheut/Hal9000Screen/tree/master/resources)
 
 ```
 mkdir /home/pi/.config/autostart
@@ -175,7 +175,7 @@ Exec=lxterminal -e /home/pi/slideshow.sh
 ### Creation of the QIV launch script
 The script to start the application is created in the /home/pi folder
 
-You can also copy the files found here to your raspberry [resources](https://github.com/AntoineMeheut/Hal9000Screen/resources)
+You can also copy the files found here to your raspberry [resources](https://github.com/AntoineMeheut/Hal9000Screen/tree/master/resources)
 
 ```
 cd /home/pi
@@ -197,7 +197,7 @@ qiv -f -R -S -n -s -r -d 5 -l -u -t -i -m  /home/pi/pics/*
 
 Place images of Hal's control screens in the / home / pi / pics directory
 
-You will find some examples in this directory [Exemples](https://github.com/AntoineMeheut/Hal9000Screen/resources)
+You will find some examples in this directory [Exemples](https://github.com/AntoineMeheut/Hal9000Screen/tree/master/resources)
 
 ## Installation of Hyperpixel
 All the useful explanations can be found on this link.
