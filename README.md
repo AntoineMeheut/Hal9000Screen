@@ -87,10 +87,10 @@ This is what I want to get
 ### Features
 
 * Hardware pattern
-* Using Raspberry Pi Zero to have the smallest possible computers for each screen
+* Using Raspberry Pi 3 Model B+ that I recycled from my first cluster project
 * Installation of QIV (Quick Image Viewer) a software for viewing images
-* Setting up an autostart on a Raspberry Pi Zero
-* Using a shell script for execution when the Raspberry Pi Zero starts up
+* Setting up an autostart on a Raspberry Pi
+* Using a shell script for execution when the Raspberry Pi starts up
 
 ### Feedback
 
@@ -113,7 +113,7 @@ to your favorite stores.
 
 | Number | Parts |
 | ------ | ---- |
-| 4 | [Raspberry Pi Zero](https://www.raspberrypi.org/products/raspberry-pi-zero/) |
+| 4 | [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/) |
 | 4 | [Micro SD Card 16 Go](https://shop.westerndigital.com/products/memory-cards/sandisk-ultra-uhs-i-microsd#SDSQUNC-016G-AN6MA) |
 | 4 | [HyperPixel 4.0 Square](https://shop.pimoroni.com/products/hyperpixel-4-square?variant=30138251444307) |
 | 4 | [USB Cables](https://www.startech.com/Cables/USB-2.0/Micro/mobile-charge-sync-micro-usb-cable-15cm~USBAUB15CMBK) |
@@ -155,7 +155,7 @@ sudo apt-get install qiv
 ### Creating an automatic startup script
 When starting the desktop, LXDE automatically launches the scripts found in the /home/pi/.config/autostart folder
 
-We will therefore create this folder on our Raspberry Pi Zero and then create the script that will be launched at startup
+We will therefore create this folder on our Raspberry Pi and then create the script that will be launched at startup
 from the office.
 
 You can also copy the files found here to your raspberry [resources](https://github.com/AntoineMeheut/Hal9000Screen/tree/master/resources)
@@ -225,7 +225,7 @@ git clone https://github.com/AntoineMeheut/Hal9000Screen
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Once you have followed the steps to prepare your Raspberry Pi Zero, simply turn on the Raspberry
+Once you have followed the steps to prepare your Raspberry Pi, simply turn on the Raspberry
 and everything will start by itself.
 
 <!-- ROADMAP -->
