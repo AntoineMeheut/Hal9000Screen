@@ -94,11 +94,14 @@ This is what I want to get
 
 ### Feedback
 
-* 
+* Putting the components together, installing the scripts and images and starting it all up is pretty fast
+* So that the images are aligned and of good size it is preferable to put them at a size of 720x720
+* The display quality of these small screens is impressive
 
 ### Experience sharing
-* 
 
+* Warning: it is better to do it very slowly when you plug in the raspberry with the screen and avoid pressing the screen as much as possible
+* Keep the screen protector during assembly to avoid fingerprints
 
 ## Hardware
 ### Shopping list
