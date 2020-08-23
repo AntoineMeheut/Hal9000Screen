@@ -198,9 +198,9 @@ qiv -f -R -S -n -s -r -d 5 -l -u -t -i -m  /home/pi/pics/*
 
 ### Create a photo library of Hal monitors
 
-Place images of Hal's control screens in the / home / pi / pics directory
+Place images of Hal's control screens in the /home/pi/pics directory
 
-You will find some examples in this directory [Exemples](https://github.com/AntoineMeheut/Hal9000Screen/tree/master/resources)
+You can easily find images on the internet, in photos from the film or in wallpapers.
 
 ## Installation of Hyperpixel
 All the useful explanations can be found on this link.
