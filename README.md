@@ -4,9 +4,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -28,8 +25,6 @@
     <a href="https://github.com/AntoineMeheut/Hal9000Screen/issues">Request Feature</a>
   </p>
 </p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -252,7 +247,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Antoine Méheut - [@Linkedin_antoine-meheut](https://www.linkedin.com/in/antoine-meheut)
+If you want to contact me [just clic](mailto:github.contacts@protonmail.com)
 
 Project Link: [https://github.com/AntoineMeheut/Hal9000Screen](https://github.com/AntoineMeheut/Hal9000Screen)
 
@@ -269,6 +264,3 @@ Project Link: [https://github.com/AntoineMeheut/Hal9000Screen](https://github.co
 [issues-url]: https://github.com/AntoineMeheut/Hal9000Screen/issues
 [license-shield]: https://img.shields.io/github/license/AntoineMeheut/Rokc
 [license-url]: https://github.com/AntoineMeheut/Rokc/blob/master/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/antoine-meheut
-[product-screenshot]: images/screenshot.png
